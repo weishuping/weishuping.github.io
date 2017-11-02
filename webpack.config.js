@@ -9,12 +9,16 @@ module.exports = {
     module: {
         loaders: [
             {
-            test: path.join(__dirname, 'js'),
-            loader: 'babel-loader',
-            query: {
-              presets: ['es2015']
+                test: path.join(__dirname, 'js'),
+                loader: 'babel-loader',
+                query: {
+                    presets: ['es2015']
+                },
+                exclude: /node_module/
+            },{
+                test: /\.less$/,
+                loaders: 'style-loader!css-loader!less-loader'
             }
-          }
         ]
     }
 }

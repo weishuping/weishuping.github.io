@@ -1,5 +1,7 @@
 
-(function(){
+//import '../css/my.less'
+require('../css/my.less');
+//(function(){//require('../css/my.less');
     var works = {
         "company_info": {
             "begin_date": "2016-07-11",
@@ -25,6 +27,27 @@
     var skills = [
         {
             "name": "HTML(5)",
+            "ability": "熟练掌握HTML5语义化，规范代码"
+        },{
+            "name": "CSS(3)",
+            "ability": "熟练掌握HTML5语义化，规范代码"
+        },{
+            "name": "CSS(3)",
+            "ability": "熟练掌握HTML5语义化，规范代码"
+        },{
+            "name": "CSS(3)",
+            "ability": "熟练掌握HTML5语义化，规范代码"
+        },{
+            "name": "CSS(3)",
+            "ability": "熟练掌握HTML5语义化，规范代码"
+        },{
+            "name": "CSS(3)",
+            "ability": "熟练掌握HTML5语义化，规范代码"
+        },{
+            "name": "CSS(3)",
+            "ability": "熟练掌握HTML5语义化，规范代码"
+        },{
+            "name": "CSS(3)",
             "ability": "熟练掌握HTML5语义化，规范代码"
         },{
             "name": "CSS(3)",
@@ -63,10 +86,10 @@
 
     var app = {};
     
-    app.skills = new Vue({
+    app.works = new Vue({
       el: '#work',
     });
     app.skills = new Vue({
       el: '#skill',
     })
-})()
+//})()
