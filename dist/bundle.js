@@ -81,7 +81,7 @@ var works = {
     },
     "experience": [{
         "title": "人力资源核心人力",
-        "memo": "软件开发",
+        "memo": "",
         "text": "主要工作是"
     }, {
         "title": "移动端人员信息和组织查询",
@@ -95,31 +95,28 @@ var works = {
 };
 var skills = [{
     "name": "HTML(5)",
-    "ability": "熟练掌握HTML5语义化，规范代码"
+    "ability": "熟练掌握HTML5语义化，合理使用标签，规范代码书写结构"
 }, {
-    "name": "CSS(3)",
-    "ability": "熟练掌握HTML5语义化，规范代码"
+    "name": "CSS(3)、Less",
+    "ability": "熟练掌握CSS、CSS3、LESS"
 }, {
-    "name": "CSS(3)",
-    "ability": "熟练掌握HTML5语义化，规范代码"
+    "name": "JavaScript、JQuery; ES6;Knockout、React;Angular、Vue、RequireJS",
+    "ability": "\u719F\u7EC3\u638C\u63E1JavaScript\u3001JQuery\uFF1B\u57FA\u672C\u638C\u63E1Knockout\u548CReact;\u4E86\u89E3\u548C\u719F\u6089Angular\u3001Vue\u548CRequireJS\u3002"
 }, {
-    "name": "CSS(3)",
-    "ability": "熟练掌握HTML5语义化，规范代码"
+    "name": "webpack",
+    "ability": "熟练掌握webpack常用用法，合并打包各类文件并配合其他框架搭建项目"
 }, {
-    "name": "CSS(3)",
-    "ability": "熟练掌握HTML5语义化，规范代码"
+    "name": "Node、NPM",
+    "ability": "了解node服务，熟悉npm常用命令"
 }, {
-    "name": "CSS(3)",
-    "ability": "熟练掌握HTML5语义化，规范代码"
+    "name": "Git、shell",
+    "ability": "熟练掌握Git操作，配合团队协作开发。掌握基本的shell命令"
 }, {
-    "name": "CSS(3)",
-    "ability": "熟练掌握HTML5语义化，规范代码"
+    "name": "Java、MyBatis、MVC",
+    "ability": "学过后台语言，简单的增删改查会写，SpringMVC接触过一些"
 }, {
-    "name": "CSS(3)",
-    "ability": "熟练掌握HTML5语义化，规范代码"
-}, {
-    "name": "CSS(3)",
-    "ability": "熟练掌握HTML5语义化，规范代码"
+    "name": "常用的数据结构和算法",
+    "ability": ""
 }];
 Vue.component('workbground', {
     template: "<div class=\"background\">\n            <p class=\"company-info\">{{company_info.title}} (<span>{{company_info.begin_date}}</span> - <span>{{company_info.end_date}}</span)</p>\n            <div v-for=\"arr in dataWork\" class=\"iterator\">\n            <p>{{arr.title}}</p>\n            <h5>{{arr.memo}}</h5>\n            <div class=\"long-text\">{{arr.text}}</div>\n            </div></div>",
@@ -131,7 +128,7 @@ Vue.component('workbground', {
     }
 });
 Vue.component('skill', {
-    template: "<div>\n                    <div v-for=\"skill in dataSki\">\n                    <label>{{skill.name}}</label>\n                    <span> {{skill.ability}}</span>\n                    </div>\n                </div>",
+    template: "<div class=\"skill\">\n                    <div v-for=\"skill in dataSki\">\n                    <label>{{skill.name}}</label>\n                    <span> {{skill.ability}}</span>\n                    </div>\n                </div>",
     //template: '<div><div v-for="arr in dataEdu" class="iterator">{{arr.text}}</div></div>',
     data: function data() {
         return {
@@ -190,7 +187,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, ".page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #fff;\n  font-size: 48px;\n}\n.self {\n  text-align: center;\n}\n.self h4 {\n  font-family: 'SimHei';\n  color: #fff;\n  font-size: 18px;\n}\n.self h3 {\n  font-family: 'FangSong_GB2312';\n  color: #fff;\n  font-size: 24px;\n}\n.self img {\n  width: 40%;\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  border-radius: 50%;\n  border: 10px solid #FFB6C1;\n}\n#skill h1 {\n  color: #F08080;\n}\n#skill label {\n  color: #1f8dd6;\n}\n#work h1 {\n  display: inline-block;\n  width: 25%;\n}\n#work .background {\n  display: inline-block;\n  width: 70%;\n  font-size: 0.5em;\n}\n#work .background .company-info {\n  color: #FFD700;\n}\n", ""]);
+exports.push([module.i, ".page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #fff;\n  font-size: 48px;\n}\n.self {\n  text-align: center;\n}\n.self h4 {\n  font-family: 'SimHei';\n  color: #fff;\n  font-size: 18px;\n}\n.self h3 {\n  font-family: 'FangSong_GB2312';\n  color: #fff;\n  font-size: 24px;\n}\n.self img {\n  width: 40%;\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  border-radius: 50%;\n  border: 10px solid #FFB6C1;\n}\n#skill h1 {\n  color: #F08080;\n}\n#skill .skill label {\n  color: #1f8dd6;\n  display: block;\n  font-size: 0.8em;\n}\n#skill .skill span {\n  font-size: 0.7em;\n}\n#work h1 {\n  display: inline-block;\n  width: 25%;\n}\n#work .background {\n  display: inline-block;\n  width: 70%;\n  font-size: 0.5em;\n}\n#work .background .company-info {\n  color: #FFD700;\n}\n", ""]);
 
 // exports
 

@@ -11,7 +11,7 @@ require('../css/my.less');
         "experience":[
             {
                 "title": "人力资源核心人力",
-                "memo": "软件开发",
+                "memo": "",
                 "text": "主要工作是"
             }, {
                 "title": "移动端人员信息和组织查询",
@@ -27,31 +27,28 @@ require('../css/my.less');
     var skills = [
         {
             "name": "HTML(5)",
-            "ability": "熟练掌握HTML5语义化，规范代码"
+            "ability": "熟练掌握HTML5语义化，合理使用标签，规范代码书写结构"
         },{
-            "name": "CSS(3)",
-            "ability": "熟练掌握HTML5语义化，规范代码"
+            "name": "CSS(3)、Less",
+            "ability": "熟练掌握CSS、CSS3、LESS"
         },{
-            "name": "CSS(3)",
-            "ability": "熟练掌握HTML5语义化，规范代码"
+            "name": "JavaScript、JQuery; ES6;Knockout、React;Angular、Vue、RequireJS",
+            "ability": `熟练掌握JavaScript、JQuery；基本掌握Knockout和React;了解和熟悉Angular、Vue和RequireJS。`
         },{
-            "name": "CSS(3)",
-            "ability": "熟练掌握HTML5语义化，规范代码"
+            "name": "webpack",
+            "ability": "熟练掌握webpack常用用法，合并打包各类文件并配合其他框架搭建项目"
         },{
-            "name": "CSS(3)",
-            "ability": "熟练掌握HTML5语义化，规范代码"
+            "name": "Node、NPM",
+            "ability": "了解node服务，熟悉npm常用命令"
         },{
-            "name": "CSS(3)",
-            "ability": "熟练掌握HTML5语义化，规范代码"
+            "name": "Git、shell",
+            "ability": "熟练掌握Git操作，配合团队协作开发。掌握基本的shell命令"
         },{
-            "name": "CSS(3)",
-            "ability": "熟练掌握HTML5语义化，规范代码"
+            "name": "Java、MyBatis、MVC",
+            "ability": "学过后台语言，简单的增删改查会写，SpringMVC接触过一些"
         },{
-            "name": "CSS(3)",
-            "ability": "熟练掌握HTML5语义化，规范代码"
-        },{
-            "name": "CSS(3)",
-            "ability": "熟练掌握HTML5语义化，规范代码"
+            "name": "常用的数据结构和算法",
+            "ability": ""
         }
     ];
     Vue.component('workbground', {
@@ -70,7 +67,7 @@ require('../css/my.less');
         }
     });
     Vue.component('skill', {
-      template: `<div>
+      template: `<div class="skill">
                     <div v-for="skill in dataSki">
                     <label>{{skill.name}}</label>
                     <span> {{skill.ability}}</span>
