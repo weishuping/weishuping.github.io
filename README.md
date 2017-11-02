@@ -31,4 +31,12 @@ npm install less-loader --save-dev
 还是有错误，找不到 style-loader,所以安装 npm install --save-dev style-loader css-loader
 
 加载速度太慢了，不用从网页加载的。但是vue-loader 是针对 .vue 不知道管不管js里面的
+安装vue-loader 
 安装vue
+但是有错误
+``` 
+ You are using the runtime-only build of Vue where the template compiler is not available. Either pre-compile the templates into render functions, or use the compiler-included build.
+ ```
+查了一下 在webpack.config.js 配置 resolve 别名 ,然后在my.js中引入 import Vue from 'vue';
+
+因为首先加入的impress样式影响第一张图片加载会抖动，所以我决定在此之前 再添一页。想要一个带心得图片，ps上文字嘛 哈哈 

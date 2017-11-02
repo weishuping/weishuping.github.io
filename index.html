@@ -1,66 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=1024" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <title> 魏淑平的个人主页</title>
-        
-        <meta name="author" content="weishuping" />
-        <link href="css/impress-demo.css" rel="stylesheet" />
-        <!-- <link href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" /> -->
-        <!-- <link href="css/my.css" rel="stylesheet" /> -->
-    </head>
-    <body style="background: #F08080;">
-        <div id="impress" class="impress-not-supported">
-                <div id="bored" class="step" data-x="-1000" data-y="-1500">
-                    <div class="col-md-4 self">
-                        <img src="./static/img/timg.jpg">
-                        <h1 class="page-title">魏淑平</h1>
-                        <h4>一腔热血</h4>
-                        <h3>WEB前端工程师</h3>
-                        <h4>15029039705@163.com</h4>
-                    </div>
-                </div>
-                <div class="step slide" id="skill" data-x="0" data-y="-1500">
-                   <h1 class="page-title">专业技能</h1>
-                   <skill></skill>
-                </div>
-            
-                <div class="step" id="work" data-x="1000" data-y="-1500">
-                    <h1 class="page-title">工作经历</h1>
-                    <workbground></workbground>
-                </div>
-                <div id="edu" class="step" data-x="2000" data-y="-1500">
-                    <h1 class="page-title">教育背景</h1>
-                    <div class="col-md-4 self">
-                        <img src="./static/img/timg.jpg">
-                        <h1 class="page-title">魏淑平</h1>
-                        <h4>一腔热血</h4>
-                        <h3>WEB前端工程师</h3>
-                        <h4>15029039705@163.com</h4>
-                    </div>
-                </div>
-                <div id="internship" class="step slide" data-x="3000" data-y="-1500">
-                    <h1 class="page-title">教育背景</h1>
-                    <div class="col-md-4 self">
-                        <img src="./static/img/timg.jpg">
-                        <h1 class="page-title">魏淑平</h1>
-                        <h4>一腔热血</h4>
-                        <h3>WEB前端工程师</h3>
-                        <h4>15029039705@163.com</h4>
-                    </div>
-                </div>
-        </div>
-        <script src="lib/jquery-1.11.2.js"></script>
-       
-        <script src="https://unpkg.com/vue"></script>
-        <script src="dist/bundle.js"></script>
-         <!-- <script src="js/my.js"></script> --> 
-        <script src="js/impress.js"></script>
-        <script>impress().init();</script>
-        <script type="text/javascript">
 
-        </script>
-    </body>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title> 魏淑平的个人主页</title>
+
+    <meta name="author" content="weishuping" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <!-- <link href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/my.css" rel="stylesheet" /> -->
+</head>
+
+<body style="background: #FA8072;">
+    <div id="impress" class="impress-not-supported">
+        <div id="bored" class="step slide" data-x="-2000" data-y="-1500" style="text-align: center;">
+            <img src="./static/img/hello.jpg">
+        </div>
+        <div id="about" class="step" data-x="-1000" data-y="-1500">
+            <div class="col-md-4 self">
+                <img src="./static/img/timg.jpg">
+                <h1 class="page-title">魏淑平</h1>
+                <h4>一腔热血 两袖清风 不知所云</h4>
+                <h3>WEB前端工程师</h3>
+                <h4>15029039705@163.com</h4>
+            </div>
+        </div>
+        <div class="step slide" id="skill" data-x="0" data-y="-1500">
+            <h1 class="page-title">专业技能</h1>
+            <skill></skill>
+        </div>
+
+        <div class="step" id="work" data-x="1000" data-y="-1500">
+            <h1 class="page-title">工作经历</h1>
+            <workbground></workbground>
+        </div>
+        <div id="edu" class="step" data-x="2000" data-y="-1500">
+            <h1 class="page-title">教育背景</h1>
+            <div class="">
+                <h1 class="page-title">西北农林科技大学</h1>
+                <h4>信息工程学院</h4>
+                <h3>电子商务专业</h3>
+                <h4>15029039705@163.com</h4>
+            </div>
+        </div>
+        <div id="internship" class="step slide" data-x="3000" data-y="-1500">
+            <h1 class="page-title">教育背景</h1>
+            <div class="col-md-4 self">
+                <img src="./static/img/timg.jpg">
+                <h1 class="page-title">魏淑平</h1>
+                <h4>一腔热血</h4>
+                <h3>WEB前端工程师</h3>
+                <h4>15029039705@163.com</h4>
+            </div>
+        </div>
+    </div>
+    <script src="lib/jquery-1.11.2.js"></script>
+    <!-- <script src="https://unpkg.com/vue"></script> -->
+    <script src="dist/bundle.js"></script>
+    <!-- <script src="js/my.js"></script> -->
+    <script src="js/impress.js"></script>
+    <script>
+        impress().init();
+    </script>
+    <script type="text/javascript">
+    </script>
+</body>
+
 </html>

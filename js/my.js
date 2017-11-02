@@ -1,5 +1,4 @@
-
-//import '../css/my.less'
+import Vue from 'vue';
 require('../css/my.less');
 //(function(){//require('../css/my.less');
     var works = {

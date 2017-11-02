@@ -19,7 +19,14 @@ module.exports = {
                 test: /\.less$/,
                 loaders: 'style-loader!css-loader!less-loader',
                 exclude: /node_module/
+            },{
+                test: /\.vue$/,
+                loader: 'vue-loader'
             }
         ]
+    },
+    resolve: { 
+        alias: { 'vue': 'vue/dist/vue.js' }
     }
+    
 }
