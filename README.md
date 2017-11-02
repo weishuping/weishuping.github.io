@@ -29,3 +29,6 @@ npm install babel-preset-es2015 --save-dev
 npm install less-loader --save-dev
 但是有错误，所以安装less npm install less --save-dev
 还是有错误，找不到 style-loader,所以安装 npm install --save-dev style-loader css-loader
+
+加载速度太慢了，不用从网页加载的。但是vue-loader 是针对 .vue 不知道管不管js里面的
+安装vue
