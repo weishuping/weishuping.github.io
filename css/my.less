@@ -1,11 +1,14 @@
-.page-title {
+.title(@color: #fff) {
     font-family: 'STKaiti';
     font-weight: bold;
-    color: #fff;
+    color: @color;
     font-size: 48px;
 }
 .self {
     text-align: center;
+    .page-title {
+        .title();
+    }
     h4 {
         font-family: 'SimHei';
         color: #fff;
@@ -26,10 +29,9 @@
 }
 
 #skill {
-    h1{
-        color: #F08080;
+    .page-title {
+        .title((#F08080););
     }
-    
    .skill {
         label {
           color: #1f8dd6;
@@ -54,6 +56,19 @@
         .company-info {
             color: #FFD700;
         }
+    }
+    
+}
+#edu  {
+    .page-title {
+        .title(#4876FF);
+        display: inline-block;
+        width: 25%;
+    }
+    .edu-background {
+        display: inline-block;
+        width: 70%;
+        font-size: 0.7em;
     }
 }
 

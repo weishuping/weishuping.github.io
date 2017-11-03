@@ -109,7 +109,8 @@ var works = {
     "company_info": {
         "begin_date": "2016-07-11",
         "end_date": "至今",
-        "title": "用友网络科技股份有限公司"
+        "title": "用友网络科技股份有限公司",
+        "memo": ""
     },
     "experience": [{
         "title": "人力资源核心人力",
@@ -150,8 +151,15 @@ var skills = [{
     "name": "常用的数据结构和算法",
     "ability": ""
 }];
+var dataEdu = {
+    school: "西北农林科技大学",
+    major: "电子商务",
+    MCourses: "主修课程：C、C++、数据勾结、数据库、Java、网页设计与制作、算法分析与设计、计算机网络、数字逻辑、计算机组成原理、操作系统、网络安全、电子支付与安全等",
+    somethingelse: "在大学期间，曾多次获得奖学金"
+};
+
 _vue2.default.component('workbground', {
-    template: '<div class="background">\n            <p class="company-info">{{company_info.title}} (<span>{{company_info.begin_date}}</span> - <span>{{company_info.end_date}}</span)</p>\n            <div v-for="arr in dataWork" class="iterator">\n            <p>{{arr.title}}</p>\n            <h5>{{arr.memo}}</h5>\n            <div class="long-text">{{arr.text}}</div>\n            </div></div>',
+    template: '<div class="background">\n            <p class="company-info">{{company_info.title}} <span>{{company_info.begin_date}}</span> - <span>{{company_info.end_date}}</span)</p>\n            <div v-for="arr in dataWork" class="iterator">\n            <p>{{arr.title}}</p>\n            <h5>{{arr.memo}}</h5>\n            <div class="long-text">{{arr.text}}</div>\n            </div></div>',
     data: function data() {
         return {
             dataWork: works.experience,
@@ -160,7 +168,7 @@ _vue2.default.component('workbground', {
     }
 });
 _vue2.default.component('skill', {
-    template: '<div class="skill">\n                    <div v-for="skill in dataSki">\n                    <label>{{skill.name}}</label>\n                    <span> {{skill.ability}}</span>\n                    </div>\n                </div>',
+    template: '<div class="skill">\n                    <div v-for="skill in dataSki">\n                        <label>{{skill.name}}</label>\n                        <span> {{skill.ability}}</span>\n                    </div>\n                </div>',
     //template: '<div><div v-for="arr in dataEdu" class="iterator">{{arr.text}}</div></div>',
     data: function data() {
         return {
@@ -168,7 +176,14 @@ _vue2.default.component('skill', {
         };
     }
 });
-
+_vue2.default.component('edubground', {
+    template: '<div class="edu-background">\n                <div>\n                    {{edu.school}}\n                </div>\n                <div>\n                    {{edu.major}}\n                </div>\n                <div>\n                    {{edu.MCourses}}\n                </div>\n                <div>\n                    {{edu.somethingelse}}\n                </div>\n            </div>',
+    data: function data() {
+        return {
+            edu: dataEdu
+        };
+    }
+});
 var app = {};
 
 app.works = new _vue2.default({
@@ -176,6 +191,9 @@ app.works = new _vue2.default({
 });
 app.skills = new _vue2.default({
     el: '#skill'
+});
+app.edu = new _vue2.default({
+    el: '#edu'
 });
 //})()
 
@@ -11220,7 +11238,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #fff;\n  font-size: 48px;\n}\n.self {\n  text-align: center;\n}\n.self h4 {\n  font-family: 'SimHei';\n  color: #fff;\n  font-size: 18px;\n}\n.self h3 {\n  font-family: 'FangSong_GB2312';\n  color: #fff;\n  font-size: 24px;\n}\n.self img {\n  width: 40%;\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  border-radius: 50%;\n  border: 10px solid #FFB6C1;\n}\n#skill h1 {\n  color: #F08080;\n}\n#skill .skill label {\n  color: #1f8dd6;\n  display: block;\n  font-size: 0.8em;\n}\n#skill .skill span {\n  font-size: 0.7em;\n}\n#work h1 {\n  display: inline-block;\n  width: 25%;\n}\n#work .background {\n  display: inline-block;\n  width: 70%;\n  font-size: 0.5em;\n}\n#work .background .company-info {\n  color: #FFD700;\n}\n", ""]);
+exports.push([module.i, ".self {\n  text-align: center;\n}\n.self .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #fff;\n  font-size: 48px;\n}\n.self h4 {\n  font-family: 'SimHei';\n  color: #fff;\n  font-size: 18px;\n}\n.self h3 {\n  font-family: 'FangSong_GB2312';\n  color: #fff;\n  font-size: 24px;\n}\n.self img {\n  width: 40%;\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  border-radius: 50%;\n  border: 10px solid #FFB6C1;\n}\n#skill .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #F08080;\n  font-size: 48px;\n}\n#skill .skill label {\n  color: #1f8dd6;\n  display: block;\n  font-size: 0.8em;\n}\n#skill .skill span {\n  font-size: 0.7em;\n}\n#work h1 {\n  display: inline-block;\n  width: 25%;\n}\n#work .background {\n  display: inline-block;\n  width: 70%;\n  font-size: 0.5em;\n}\n#work .background .company-info {\n  color: #FFD700;\n}\n#edu .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #4876FF;\n  font-size: 48px;\n  display: inline-block;\n  width: 25%;\n}\n#edu .edu-background {\n  display: inline-block;\n  width: 70%;\n  font-size: 0.7em;\n}\n", ""]);
 
 // exports
 
