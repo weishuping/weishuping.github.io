@@ -6,24 +6,31 @@ var works = {
         "begin_date": "2016-07-11",
         "end_date": "至今",
         "title": "用友网络科技股份有限公司",
-        "memo": "产品名称：友人才。是以员工服务、共享服务为核心理念的SaaS HR，我入职之后主要负责核心人力部分，包括组织管理、员工中心、员工假勤以及智能分析"
+        "memo": "产品名称：友人才。是以员工服务、共享服务为核心理念的SaaS HR，我入职之后主要负责核心人力部分，包括组织管理、员工中心、员工假勤"
     },
     "experience": [{
         "title": "人力资源核心人力",
-        "memo": "",
-        "text": "主要工作是"
+        "memo": `使用基于流的gulp构建源代码到产出代码，按照不同文件类型进行编译并压缩输出；
+        使用RequireJs框架加载各类模块文件；
+        使用babel支持ES6语法编译并压缩；
+        使用mock-server模拟REST请求，可以在不依赖后端服务的情况下，本地前端自己起一个服务，使用假数据渲染模板并实现请求路由映射；
+        使用koa2实现前后端分离，模拟服务；
+        使用Knockout库实现双向绑定即MVVM模式`,
+        "text": "主要工作是实现组织管理中的职级、职务和职位，员工假勤的考勤日报、月报、休假类型、假勤档案、签到数据、班次定义、考勤周期、员工排班、员工加班等；使用UEditor实现知识库；还有流程相关的业务"
     }, {
         "title": "PC端——企业海报模板",
-        "memo": "软件开发",
-        "text": "主要工作是"
+        "memo": `使用Angular框架实现海报模板的"所见即所得"`,
+        "text": "主要工作是实现海报列表，海报详情。可以在详情页直接编辑，预览，上下页移动、翻页、隐藏，替换背景图片等，发布之后可以复制链接在手机端浏览。"
     }, {
         "title": "移动端——人员信息和组织查询",
-        "memo": "软件开发",
-        "text": "主要工作是"
+        "memo": `使用webpack打包模块;使用mock-server模拟服务
+        使用React框架和Ant Design实现模板渲染和功能交互，
+        `,
+        "text": "主要工作是查询员工的我的团队，查询团队中人员信息；查询我的组织以及下级组织或者上级组织以及组织内人员列表和人员详情，人员详情包括基本信息、学历、任职信息、工作记录、其他信息等"
     }, {
         "title": "微信小程序——员工入职",
-        "memo": "软件开发",
-        "text": "主要工作是"
+        "memo": "使用微信web开发者工具根据小程序文档开发相关功能",
+        "text": "该程序主要用于入职人员，接受offer之后，填写个人相关信息。实现增删改查"
     }, ]
 };
 var skills = [{
@@ -62,9 +69,9 @@ Vue.component('workbground', {
     template: `<div class="background">
             <p class="company-info">{{company_info.title}} <span>{{company_info.begin_date}}</span> - <span>{{company_info.end_date}}</span)</p>
             <div v-for="arr in dataWork" class="iterator">
-            <p>{{arr.title}}</p>
-            <h5>{{arr.memo}}</h5>
-            <div class="long-text">{{arr.text}}</div>
+            <p><label>名称<label>{{arr.title}}</p>
+            <h5><label>技术实现<label>{{arr.memo}}</h5>
+            <div class="long-text"<label>主要职责<label>>{{arr.text}}</div>
             </div></div>`,
     data: function() {
         return {
