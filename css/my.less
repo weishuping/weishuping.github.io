@@ -32,13 +32,17 @@
     .page-title {
         .title((#F08080););
     }
+    /*#skill_title_bg{
+        background: url('../static/img/big_title.png') no-repeat 100% 100%;
+    }*/
    .skill {
         label {
-          color: #1f8dd6;
+          color: #333;
           display: block;
           font-size: 0.8em;
         }
         span {
+            color: #666;
             font-size: 0.7em;
         }
    }
@@ -46,19 +50,30 @@
 
 #work {
     .page-title {
-        .title(#FFFF00);
+        .title(#fff);
     }
     .background {
         display: inline-block;
         width: 98%;
-        font-size: 0.4em;
-        color: #fff;
+        label, .bg-memo {
+            color: #fff0d8;
+            font-size: 0.4em;
+        }
         .pro-name {
-            color: #FFFF00;
+            color: #FFF;
+            font-size: 0.5em;
+            font-family: 'PingFang SC','Microsoft YaHei',SimHei,Arial,SimSun;
         }
         .company-info {
-            color: #FFFF00;
+            color: #FFF;
+            font-size: 0.5em;
+            line-height: 1;
+            position: absolute;
+            left: 25%;
+            margin-top: -6%;
+            font-family: 'PingFang SC','Microsoft YaHei',SimHei,Arial,SimSun;
         }
+        
     }
     
 }

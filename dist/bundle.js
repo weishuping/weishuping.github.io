@@ -113,7 +113,7 @@ var works = {
         "memo": "产品名称：友人才。是以员工服务、共享服务为核心理念的SaaS HR，我入职之后主要负责核心人力部分，包括组织管理、员工中心、员工假勤"
     },
     "experience": [{
-        "title": "人力资源核心人力",
+        "title": "PC端——人力资源核心人力",
         "memo": '\u4F7F\u7528\u57FA\u4E8E\u6D41\u7684gulp\u6784\u5EFA\u6E90\u4EE3\u7801\u5230\u4EA7\u51FA\u4EE3\u7801\uFF0C\u6309\u7167\u4E0D\u540C\u6587\u4EF6\u7C7B\u578B\u8FDB\u884C\u7F16\u8BD1\u5E76\u538B\u7F29\u8F93\u51FA\uFF1B\n        \u4F7F\u7528RequireJs\u6846\u67B6\u52A0\u8F7D\u5404\u7C7B\u6A21\u5757\u6587\u4EF6\uFF1B\n        \u4F7F\u7528babel\u652F\u6301ES6\u8BED\u6CD5\u7F16\u8BD1\u5E76\u538B\u7F29\uFF1B\n        \u4F7F\u7528mock-server\u6A21\u62DFREST\u8BF7\u6C42\uFF0C\u53EF\u4EE5\u5728\u4E0D\u4F9D\u8D56\u540E\u7AEF\u670D\u52A1\u7684\u60C5\u51B5\u4E0B\uFF0C\u672C\u5730\u524D\u7AEF\u81EA\u5DF1\u8D77\u4E00\u4E2A\u670D\u52A1\uFF0C\u4F7F\u7528\u5047\u6570\u636E\u6E32\u67D3\u6A21\u677F\u5E76\u5B9E\u73B0\u8BF7\u6C42\u8DEF\u7531\u6620\u5C04\uFF1B\n        \u4F7F\u7528koa2\u5B9E\u73B0\u524D\u540E\u7AEF\u5206\u79BB\uFF0C\u6A21\u62DF\u670D\u52A1\uFF1B\n        \u4F7F\u7528Knockout\u5E93\u5B9E\u73B0\u53CC\u5411\u7ED1\u5B9A\u5373MVVM\u6A21\u5F0F',
         "text": "主要工作是实现组织管理中的职级、职务和职位，员工假勤的考勤日报、月报、休假类型、假勤档案、签到数据、班次定义、考勤周期、员工排班、员工加班等；知识库、简易对话机器人；还有流程相关的业务"
     }, {
@@ -157,13 +157,13 @@ var skills = [{
 }];
 var dataEdu = {
     school: "西北农林科技大学",
-    major: "电子商务",
+    major: "信息工程学院电子商务",
     MCourses: "主修课程：C、C++、数据勾结、数据库、Java、网页设计与制作、算法分析与设计、计算机网络、数字逻辑、计算机组成原理、操作系统、网络安全、电子支付与安全等",
     somethingelse: "在大学期间，曾多次获得奖学金"
 };
 
 _vue2.default.component('workbground', {
-    template: '<div class="background">\n            <p class="company-info">{{company_info.title}} <span>{{company_info.begin_date}}</span> - <span>{{company_info.end_date}}</span)</p>\n            <div v-for="arr in dataWork" class="iterator">\n            <p class="pro-name">{{arr.title}}</p>\n            <h5><label>\u6280\u672F\u5B9E\u73B0\uFF1A</label>{{arr.memo}}</h5>\n            <div class="long-text"<label>\u4E3B\u8981\u804C\u8D23\uFF1A</label>{{arr.text}}</div>\n            </div></div>',
+    template: '<div class="background">\n            <div class="company-info">\n               <p> {{company_info.title}}</p>\n             <span>{{company_info.begin_date}}</span> - <span>{{company_info.end_date}}</span>\n             </div>\n            <div v-for="arr in dataWork" class="iterator">\n            <p class="pro-name">{{arr.title}}</p>\n            <div class="bg-memo">\u6280\u672F\u5B9E\u73B0\uFF1A{{arr.memo}}</div>\n            <div class="bg-memo">\u4E3B\u8981\u804C\u8D23\uFF1A{{arr.text}}</div>\n            </div></div>',
     data: function data() {
         return {
             dataWork: works.experience,
@@ -11242,7 +11242,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, ".self {\n  text-align: center;\n}\n.self .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #fff;\n  font-size: 48px;\n}\n.self h4 {\n  font-family: 'SimHei';\n  color: #fff;\n  font-size: 18px;\n}\n.self h3 {\n  font-family: 'FangSong_GB2312';\n  color: #fff;\n  font-size: 24px;\n}\n.self img {\n  width: 40%;\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  border-radius: 50%;\n  border: 10px solid #FFB6C1;\n}\n#skill .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #F08080;\n  font-size: 48px;\n}\n#skill .skill label {\n  color: #1f8dd6;\n  display: block;\n  font-size: 0.8em;\n}\n#skill .skill span {\n  font-size: 0.7em;\n}\n#work .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #FFFF00;\n  font-size: 48px;\n}\n#work .background {\n  display: inline-block;\n  width: 98%;\n  font-size: 0.4em;\n  color: #fff;\n}\n#work .background .pro-name {\n  color: #FFFF00;\n}\n#work .background .company-info {\n  color: #FFFF00;\n}\n#edu .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #4876FF;\n  font-size: 48px;\n  display: inline-block;\n  width: 25%;\n}\n#edu .edu-background {\n  display: inline-block;\n  width: 70%;\n  font-size: 0.7em;\n}\n", ""]);
+exports.push([module.i, ".self {\n  text-align: center;\n}\n.self .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #fff;\n  font-size: 48px;\n}\n.self h4 {\n  font-family: 'SimHei';\n  color: #fff;\n  font-size: 18px;\n}\n.self h3 {\n  font-family: 'FangSong_GB2312';\n  color: #fff;\n  font-size: 24px;\n}\n.self img {\n  width: 40%;\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  border-radius: 50%;\n  border: 10px solid #FFB6C1;\n}\n#skill {\n  /*#skill_title_bg{\n        background: url('../static/img/big_title.png') no-repeat 100% 100%;\n    }*/\n}\n#skill .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #F08080;\n  font-size: 48px;\n}\n#skill .skill label {\n  color: #333;\n  display: block;\n  font-size: 0.8em;\n}\n#skill .skill span {\n  color: #666;\n  font-size: 0.7em;\n}\n#work .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #fff;\n  font-size: 48px;\n}\n#work .background {\n  display: inline-block;\n  width: 98%;\n}\n#work .background label,\n#work .background .bg-memo {\n  color: #fff0d8;\n  font-size: 0.4em;\n}\n#work .background .pro-name {\n  color: #FFF;\n  font-size: 0.5em;\n  font-family: 'PingFang SC', 'Microsoft YaHei', SimHei, Arial, SimSun;\n}\n#work .background .company-info {\n  color: #FFF;\n  font-size: 0.5em;\n  line-height: 1;\n  position: absolute;\n  left: 25%;\n  margin-top: -6%;\n  font-family: 'PingFang SC', 'Microsoft YaHei', SimHei, Arial, SimSun;\n}\n#edu .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #4876FF;\n  font-size: 48px;\n  display: inline-block;\n  width: 25%;\n}\n#edu .edu-background {\n  display: inline-block;\n  width: 70%;\n  font-size: 0.7em;\n}\n", ""]);
 
 // exports
 

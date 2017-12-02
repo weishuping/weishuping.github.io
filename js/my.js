@@ -67,11 +67,14 @@ var dataEdu = {
 
 Vue.component('workbground', {
     template: `<div class="background">
-            <p class="company-info">{{company_info.title}} <span>{{company_info.begin_date}}</span> - <span>{{company_info.end_date}}</span)</p>
+            <div class="company-info">
+               <p> {{company_info.title}}</p>
+             <span>{{company_info.begin_date}}</span> - <span>{{company_info.end_date}}</span>
+             </div>
             <div v-for="arr in dataWork" class="iterator">
             <p class="pro-name">{{arr.title}}</p>
-            <h5><label>技术实现：</label>{{arr.memo}}</h5>
-            <div class="long-text"<label>主要职责：</label>{{arr.text}}</div>
+            <div class="bg-memo">技术实现：{{arr.memo}}</div>
+            <div class="bg-memo">主要职责：{{arr.text}}</div>
             </div></div>`,
     data: function() {
         return {
