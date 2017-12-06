@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -92,22 +92,28 @@ module.exports = g;
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASsAAAA8AgMAAABDbnSwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAAVt8EAAAC8biePAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABISURBVFjD7dShEQAgDATBICiBvhBJ/60wIBj8v0DcFbDyonYzLP1vjdJKLCwsLCyzdeoiU8/0sbCwsLBsVlOZW2JhYWFhea0F8Ugn47ZOSDMAAAAASUVORK5CYII="
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _vue = __webpack_require__(2);
+var _vue = __webpack_require__(3);
 
 var _vue2 = _interopRequireDefault(_vue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-__webpack_require__(6);
+__webpack_require__(7);
 //(function(){//require('../css/my.less');
 var works = {
     "company_info": {
-        "begin_date": "2016-07-11",
+        "begin_date": "2016/07/11",
         "end_date": "至今",
         "title": "用友网络科技股份有限公司",
         "memo": "产品名称：友人才。是以员工服务、共享服务为核心理念的SaaS HR，我入职之后主要负责核心人力部分，包括组织管理、员工中心、员工假勤"
@@ -158,7 +164,7 @@ var skills = [{
 var dataEdu = {
     school: "西北农林科技大学",
     major: "信息工程学院电子商务",
-    MCourses: "主修课程：C、C++、数据勾结、数据库、Java、网页设计与制作、算法分析与设计、计算机网络、数字逻辑、计算机组成原理、操作系统、网络安全、电子支付与安全等",
+    MCourses: "主修课程：C、C++、数据结构、数据库、Java、网页设计与制作、算法分析与设计、计算机网络、数字逻辑、计算机组成原理、操作系统、网络安全、电子支付与安全等",
     somethingelse: "在大学期间，曾多次获得奖学金"
 };
 
@@ -202,7 +208,7 @@ app.edu = new _vue2.default({
 //})()
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, setImmediate) {/*!
@@ -10758,10 +10764,10 @@ return Vue$3;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(3).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(4).setImmediate))
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var apply = Function.prototype.apply;
@@ -10814,13 +10820,13 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(4);
+__webpack_require__(5);
 exports.setImmediate = setImmediate;
 exports.clearImmediate = clearImmediate;
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -11010,10 +11016,10 @@ exports.clearImmediate = clearImmediate;
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(5)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(6)))
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -11203,13 +11209,13 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(7);
+var content = __webpack_require__(8);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -11217,7 +11223,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(9)(content, options);
+var update = __webpack_require__(11)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -11234,21 +11240,21 @@ if(false) {
 }
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(8)(undefined);
+exports = module.exports = __webpack_require__(9)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, ".self {\n  text-align: center;\n}\n.self .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #fff;\n  font-size: 48px;\n}\n.self h4 {\n  font-family: 'SimHei';\n  color: #fff;\n  font-size: 18px;\n}\n.self h3 {\n  font-family: 'FangSong_GB2312';\n  color: #fff;\n  font-size: 24px;\n}\n.self img {\n  width: 40%;\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  border-radius: 50%;\n  border: 10px solid #FFB6C1;\n}\n#skill {\n  /*#skill_title_bg{\n        background: url('../static/img/big_title.png') no-repeat 100% 100%;\n    }*/\n}\n#skill .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #F08080;\n  font-size: 48px;\n}\n#skill .skill label {\n  color: #333;\n  display: block;\n  font-size: 0.8em;\n}\n#skill .skill span {\n  color: #666;\n  font-size: 0.7em;\n}\n#work .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #fff;\n  font-size: 48px;\n}\n#work .background {\n  display: inline-block;\n  width: 98%;\n}\n#work .background label,\n#work .background .bg-memo {\n  color: #fff0d8;\n  font-size: 0.4em;\n}\n#work .background .pro-name {\n  color: #FFF;\n  font-size: 0.5em;\n  font-family: 'PingFang SC', 'Microsoft YaHei', SimHei, Arial, SimSun;\n}\n#work .background .company-info {\n  color: #FFF;\n  font-size: 0.5em;\n  line-height: 1;\n  position: absolute;\n  left: 25%;\n  margin-top: -6%;\n  font-family: 'PingFang SC', 'Microsoft YaHei', SimHei, Arial, SimSun;\n}\n#edu .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #4876FF;\n  font-size: 48px;\n  display: inline-block;\n  width: 25%;\n}\n#edu .edu-background {\n  display: inline-block;\n  width: 70%;\n  font-size: 0.7em;\n}\n", ""]);
+exports.push([module.i, ".self {\n  text-align: center;\n}\n.self .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #fff;\n  font-size: 48px;\n}\n.self h4 {\n  font-family: 'SimHei';\n  color: #fff;\n  font-size: 18px;\n}\n.self h3 {\n  font-family: 'FangSong_GB2312';\n  color: #fff;\n  font-size: 24px;\n}\n.self img {\n  width: 40%;\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  border-radius: 50%;\n  border: 10px solid #FFB6C1;\n}\n#skill .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #fff;\n  font-size: 48px;\n  font-size: 36px;\n  padding-left: 50px;\n  font-family: PingFang-SC-Medium;\n  height: 50px;\n  line-height: 50px;\n  background: url(" + __webpack_require__(1) + ") left no-repeat;\n}\n#skill .skill label {\n  color: #333;\n  display: block;\n  font-size: 0.8em;\n  background: url(" + __webpack_require__(10) + ") left no-repeat;\n  padding-left: 40px;\n}\n#skill .skill span {\n  color: #666;\n  font-size: 0.6em;\n  padding-left: 40px;\n}\n#work .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #fff;\n  font-size: 48px;\n  font-size: 36px;\n  padding-left: 50px;\n  font-family: PingFang-SC-Medium;\n  height: 50px;\n  line-height: 50px;\n  background: url(" + __webpack_require__(1) + ") left no-repeat;\n}\n#work .background {\n  display: inline-block;\n  width: 98%;\n}\n#work .background label,\n#work .background .bg-memo {\n  color: #fff0d8;\n  font-size: 0.4em;\n}\n#work .background .pro-name {\n  color: #FFF;\n  font-size: 0.5em;\n  font-family: PingFang-SC-Medium;\n}\n#work .background .company-info {\n  color: #FFF;\n  font-size: 0.5em;\n  line-height: 1;\n  position: absolute;\n  left: 40%;\n  margin-top: -47px;\n  font-family: 'PingFang SC', 'Microsoft YaHei', SimHei, Arial, SimSun;\n}\n#edu .page-title {\n  font-family: 'STKaiti';\n  font-weight: bold;\n  color: #4876FF;\n  font-size: 48px;\n  font-family: PingFang-SC-Medium;\n  display: inline-block;\n  width: 25%;\n}\n#edu .edu-background {\n  display: inline-block;\n  width: 70%;\n  font-size: 0.7em;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports) {
 
 /*
@@ -11330,7 +11336,13 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 9 */
+/* 10 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAgMAAAC5h23wAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEUAAAD9wGD/8NgAAADsUHJuAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAgSURBVAjXYwgFggAGBgbq02GrloY6kEwzMDACTSCZBgCfri8Jhs0STAAAAABJRU5ErkJggg=="
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -11386,7 +11398,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(10);
+var	fixUrls = __webpack_require__(12);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -11702,7 +11714,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 10 */
+/* 12 */
 /***/ (function(module, exports) {
 
 

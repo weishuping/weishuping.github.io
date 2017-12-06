@@ -40,3 +40,19 @@ npm install less-loader --save-dev
 查了一下 在webpack.config.js 配置 resolve 别名 ,然后在my.js中引入 import Vue from 'vue';
 
 因为首先加入的impress样式影响第一张图片加载会抖动，所以我决定在此之前 再添一页。想要一个带心得图片，ps上文字嘛 哈哈 
+
+2017-12-5
+Error in ./static/img/blueTitle.png
+Module parse failed: Unexpected character '菱形里面一个问号'
+You may need an appropriate loader to handle this file type.
+我觉得我给less做background背景图片 没有装loader
+npm install --save-dev file-loader
+
+但是浏览器中仍然加载不到图片，他将图片装成了一系列乱码直接请求file:///D:/workspace/weishuping.github.io/97c4262a9278d80af747c2af39e36a78.png
+
+好像是用url-loader才可以
+npm install --save-dev url-loader
+然后设置 options publicPath
+
+设置热键 之前运行是 npm start 现在是 npm run build 
+在config中devServer: { inline: true },

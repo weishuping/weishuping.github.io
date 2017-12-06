@@ -3,7 +3,7 @@ require('../css/my.less');
 //(function(){//require('../css/my.less');
 var works = {
     "company_info": {
-        "begin_date": "2016-07-11",
+        "begin_date": "2016/07/11",
         "end_date": "至今",
         "title": "用友网络科技股份有限公司",
         "memo": "产品名称：友人才。是以员工服务、共享服务为核心理念的SaaS HR，我入职之后主要负责核心人力部分，包括组织管理、员工中心、员工假勤"
@@ -61,7 +61,7 @@ var skills = [{
 var dataEdu = {
     school: "西北农林科技大学",
     major: "信息工程学院电子商务",
-    MCourses: "主修课程：C、C++、数据勾结、数据库、Java、网页设计与制作、算法分析与设计、计算机网络、数字逻辑、计算机组成原理、操作系统、网络安全、电子支付与安全等",
+    MCourses: "主修课程：C、C++、数据结构、数据库、Java、网页设计与制作、算法分析与设计、计算机网络、数字逻辑、计算机组成原理、操作系统、网络安全、电子支付与安全等",
     somethingelse: "在大学期间，曾多次获得奖学金"
 }
 
