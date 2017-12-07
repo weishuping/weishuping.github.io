@@ -94,7 +94,7 @@ module.exports = g;
 /* 1 */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASsAAAA8AgMAAABDbnSwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAAVt8EAAAC8biePAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABISURBVFjD7dShEQAgDATBICiBvhBJ/60wIBj8v0DcFbDyonYzLP1vjdJKLCwsLCyzdeoiU8/0sbCwsLBsVlOZW2JhYWFhea0F8Ugn47ZOSDMAAAAASUVORK5CYII="
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAgMAAAC5h23wAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEUAAAD9wGD/8NgAAADsUHJuAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAgSURBVAjXYwgFggAGBgbq02GrloY6kEwzMDACTSCZBgCfri8Jhs0STAAAAABJRU5ErkJggg=="
 
 /***/ }),
 /* 2 */
@@ -11223,7 +11223,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(11)(content, options);
+var update = __webpack_require__(12)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -11248,7 +11248,7 @@ exports = module.exports = __webpack_require__(9)(undefined);
 
 
 // module
-exports.push([module.i, ".self {\n  text-align: center;\n}\n.self .page-title {\n  font-family: 'PingFang-SC-Medium';\n  font-weight: bold;\n  color: #fff;\n  font-size: 48px;\n}\n.self h4 {\n  font-family: 'SimHei';\n  color: #fff;\n  font-size: 18px;\n}\n.self h3 {\n  font-family: 'FangSong_GB2312';\n  color: #fff;\n  font-size: 24px;\n}\n.self img {\n  width: 40%;\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  border-radius: 50%;\n  border: 10px solid #FFB6C1;\n}\n#skill .page-title {\n  font-family: 'PingFang-SC-Medium';\n  font-weight: bold;\n  color: #fff;\n  font-size: 48px;\n  font-size: 36px;\n  padding-left: 50px;\n  height: 50px;\n  line-height: 50px;\n  background: url(" + __webpack_require__(1) + ") left no-repeat;\n}\n#skill .skill label {\n  color: #333;\n  display: block;\n  font-size: 0.8em;\n  background: url(" + __webpack_require__(10) + ") left no-repeat;\n  padding-left: 40px;\n}\n#skill .skill span {\n  color: #666;\n  font-size: 0.6em;\n  padding-left: 40px;\n}\n#work .page-title {\n  font-family: 'PingFang-SC-Medium';\n  font-weight: bold;\n  color: #fff;\n  font-size: 48px;\n  font-size: 36px;\n  padding-left: 50px;\n  height: 50px;\n  line-height: 50px;\n  background: url(" + __webpack_require__(1) + ") left no-repeat;\n}\n#work .background {\n  display: inline-block;\n  width: 98%;\n}\n#work .background label,\n#work .background .bg-memo {\n  color: #fff0d8;\n  font-size: 0.4em;\n}\n#work .background .pro-name {\n  color: #FFF;\n  font-size: 0.5em;\n  font-family: PingFang-SC-Medium;\n}\n#work .background .company-info {\n  color: #FFF;\n  font-size: 0.5em;\n  line-height: 1;\n  position: absolute;\n  left: 40%;\n  margin-top: -47px;\n  font-family: 'PingFang SC', 'Microsoft YaHei', SimHei, Arial, SimSun;\n}\n#edu .page-title {\n  font-family: 'PingFang-SC-Medium';\n  font-weight: bold;\n  color: #15b7c1;\n  font-size: 48px;\n  font-size: 36px;\n  display: inline-block;\n  width: 25%;\n}\n#edu .edu-background {\n  display: inline-block;\n  width: 70%;\n  font-size: 0.7em;\n  position: relative;\n  top: 15%;\n}\n", ""]);
+exports.push([module.i, "span,\ndiv,\na {\n  text-shadow: 0 0;\n}\n.self {\n  text-align: center;\n}\n.self .page-title {\n  font-family: 'PingFang-SC-Medium';\n  color: #fff;\n  font-size: 54px;\n  width: 300px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 3px;\n  border-bottom: 1px solid #fff;\n}\n.self h4 {\n  font-family: 'SimHei';\n  color: #fff;\n  font-size: 24px;\n}\n.self h3 {\n  font-family: 'FangSong_GB2312';\n  color: #fff0d8;\n  font-size: 36px;\n}\n.self img {\n  width: 40%;\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  border-radius: 50%;\n  border: 10px solid #FFB6C1;\n}\n#skill .page-title {\n  font-family: 'PingFang-SC-Medium';\n  font-weight: bold;\n  color: #fff;\n  font-size: 48px;\n  font-size: 36px;\n  padding-left: 50px;\n  height: 50px;\n  line-height: 50px;\n  background: url(" + __webpack_require__(10) + ") left no-repeat;\n}\n#skill .skill label {\n  color: #333;\n  display: block;\n  font-size: 0.8em;\n  background: url(" + __webpack_require__(1) + ") left no-repeat;\n  padding-left: 40px;\n}\n#skill .skill span {\n  color: #666;\n  font-size: 0.6em;\n  padding-left: 40px;\n}\n#work .page-title {\n  font-family: 'PingFang-SC-Medium';\n  font-weight: bold;\n  color: #15b7c1;\n  font-size: 48px;\n  font-size: 36px;\n  padding-left: 50px;\n  height: 50px;\n  line-height: 50px;\n  background: url(" + __webpack_require__(11) + ") left no-repeat;\n}\n#work .background {\n  display: inline-block;\n  width: 98%;\n}\n#work .background label,\n#work .background .bg-memo {\n  color: #fff0d8;\n  font-size: 18px;\n  padding-left: 40px;\n}\n#work .background .pro-name {\n  color: #FFF;\n  font-size: 24px;\n  font-family: 'PingFang-SC-Medium';\n  background: url(" + __webpack_require__(1) + ") left no-repeat;\n  padding-left: 40px;\n}\n#work .background .company-info {\n  color: #FFF;\n  font-size: 24px;\n  font-weight: bold;\n  line-height: 1;\n  position: absolute;\n  left: 40%;\n  margin-top: -47px;\n  font-family: 'PingFang SC', 'Microsoft YaHei';\n}\n#edu .page-title {\n  font-family: 'PingFang-SC-Medium';\n  font-weight: bold;\n  color: #15b7c1;\n  font-size: 48px;\n  font-size: 36px;\n  display: inline-block;\n  width: 25%;\n}\n#edu .edu-background {\n  display: inline-block;\n  width: 70%;\n  font-size: 0.7em;\n  position: relative;\n  top: 15%;\n}\n", ""]);
 
 // exports
 
@@ -11339,10 +11339,16 @@ function toComment(sourceMap) {
 /* 10 */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAgMAAAC5h23wAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEUAAAD9wGD/8NgAAADsUHJuAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAgSURBVAjXYwgFggAGBgbq02GrloY6kEwzMDACTSCZBgCfri8Jhs0STAAAAABJRU5ErkJggg=="
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASsAAAA8AgMAAABDbnSwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAAVt8EAAAC8biePAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABISURBVFjD7dShEQAgDATBICiBvhBJ/60wIBj8v0DcFbDyonYzLP1vjdJKLCwsLCyzdeoiU8/0sbCwsLBsVlOZW2JhYWFhea0F8Ugn47ZOSDMAAAAASUVORK5CYII="
 
 /***/ }),
 /* 11 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASsAAAA8AgMAAABDbnSwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAD///8AAABzxoNxAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABISURBVFjD7dShEQAgDATBICiBvhBJ/60wIBj8v0DcFbDyonYzLP1vjdJKLCwsLCyzdeoiU8/0sbCwsLBsVlOZW2JhYWFhea0F8Ugn47ZOSDMAAAAASUVORK5CYII="
+
+/***/ }),
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -11398,7 +11404,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(12);
+var	fixUrls = __webpack_require__(13);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -11714,7 +11720,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports) {
 
 

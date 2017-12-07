@@ -1,3 +1,6 @@
+span, div, a{
+    text-shadow: 0 0;
+}
 .title(@color: #fff) {
     font-family: 'PingFang-SC-Medium';
     font-weight: bold;
@@ -7,17 +10,24 @@
 .self {
     text-align: center;
     .page-title {
-        .title();
+        font-family: 'PingFang-SC-Medium';
+        color: #fff;
+        font-size: 54px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3px;        
+        border-bottom: 1px solid #fff;
     }
     h4 {
         font-family: 'SimHei';
         color: #fff;
-        font-size: 18px;
+        font-size: 24px;
     }
     h3 {
         font-family: 'FangSong_GB2312';
-        color: #fff;
-        font-size: 24px;
+        color: #fff0d8;
+        font-size: 36px;
     }
     img {
         width: 40%;
@@ -56,33 +66,37 @@
 
 #work {
     .page-title {
-        .title(#fff);
+        .title(#15b7c1);
         font-size: 36px;
         padding-left: 50px;
         height: 50px;
         line-height: 50px;
-        background: url('../static/img/blueTitle.png') left no-repeat;
+        background: url('../static/img/whiteTitle.png') left no-repeat;
     }
     .background {
         display: inline-block;
         width: 98%;
         label, .bg-memo {
             color: #fff0d8;
-            font-size: 0.4em;
+            font-size: 18px;
+            padding-left: 40px;            
         }
         .pro-name {
             color: #FFF;
-            font-size: 0.5em;
-            font-family: PingFang-SC-Medium;
+            font-size: 24px;
+            font-family: 'PingFang-SC-Medium';
+            background: url('../static/img/yellowTitle.png') left no-repeat;
+            padding-left: 40px;            
         }
         .company-info {
             color: #FFF;
-            font-size: 0.5em;
+            font-size: 24px;
+            font-weight: bold;
             line-height: 1;
             position: absolute;
             left: 40%;
             margin-top: -47px;
-            font-family: 'PingFang SC','Microsoft YaHei',SimHei,Arial,SimSun;
+            font-family: 'PingFang SC','Microsoft YaHei';
         }
         
     }
